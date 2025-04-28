@@ -1,13 +1,17 @@
 ﻿using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-public class ApplicationDbContext : DbContext
+namespace Bryan_CahueñasExamenP1.Data
 {
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+    public class ApplicationDbContext : DbContext
     {
-    }
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+            : base(options)
+        {
+        }
 
-    public DbSet<Cliente> Clientes { get; set; }
-    public DbSet<Reserva> Reservas { get; set; }
-    public DbSet<PlanRecompensa> PlanRecompensas { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Reserva> Reservas { get; set; }
+        public DbSet<PlanRecompensa> PlanesRecompensa { get; set; }
+    }
 }

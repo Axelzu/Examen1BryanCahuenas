@@ -18,7 +18,7 @@ public class Cliente
 
     [Required]
     [DataType(DataType.Date)]
-    public DateTime FechaRegistro { get; set; } /
+    public DateTime FechaRegistro { get; set; } 
 
     public bool EsActivo { get; set; } 
 
