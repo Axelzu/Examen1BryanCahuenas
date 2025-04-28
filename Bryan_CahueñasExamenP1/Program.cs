@@ -1,11 +1,10 @@
-using Microsoft.EntityFrameworkCore;
-using Bryan_Cahue�asExamenP1.Data; // ? Cambia 'TuProyecto' por el nombre real de tu proyecto
+﻿using Microsoft.EntityFrameworkCore;
+using Bryan_CahueñasExamenP1.Data; // ← Cambia 'TuProyecto' por el nombre real de tu proyecto
 
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-x
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
