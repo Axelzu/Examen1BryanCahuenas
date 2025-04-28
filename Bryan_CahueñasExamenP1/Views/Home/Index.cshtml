@@ -9,3 +9,15 @@
 <div class="text-center">
     <img src="~/images/mimeme.png" alt="Meme" style="width:400px; height:500px;" />
 </div>
+<div class="text-center mt-4">
+    <input type="text" id="miTexto" class="form-control mb-3" placeholder="Escribe algo..." style="width: 300px; margin: 0 auto;" />
+    <button type="button" class="btn btn-outline-info btn-lg" onclick="mostrarAlerta()">Mostrar Alerta</button>
+</div>
+
+<script>
+    function mostrarAlerta() {
+        var texto = document.getElementById('miTexto').value;
+        alert('mi nombre es Alexander Cahueñas, mi hobbie es el basquet y los videojuegos y el valor de campo de texto es 1: ' + texto);
+    }
+</script>
+
